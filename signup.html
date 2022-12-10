@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="signup">
+      <div class="signup__img">
+        <img src="images/signup-image.png" alt="image" />
+      </div>
+      <div class="signup__info">
+        <h1 class="signup__heading">Create Account</h1>
+        <p class="signup__paragraph">
+          Go ahead and sign up, let everyone know how awesome you are!
+        </p>
+
+        <form class="signup__form" id="signup-form">
+          <div class="signup__form-control">
+            <img src="images/icons/user.png" alt="icon" />
+            <input
+              class="signup_input"
+              type="text"
+              name="user"
+              placeholder="Username"
+              id="name-input"
+              onkeyup="validateName()"
+              required
+            />
+          </div>
+          <span class="error" id="name-error"></span>
+
+          <div class="signup__form-control">
+            <img src="images/icons/msg.png" alt="icon" />
+            <input
+              class="signup_input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              id="email-input"
+              onkeyup="validateEmail()"
+              required
+            />
+          </div>
+          <span class="error" id="email-error"></span>
+          <span class="error" id="email"></span>
+
+          <div class="signup__form-control">
+            <img src="images/icons/password.png" alt="icon" />
+            <input
+              class="signup_input"
+              type="password"
+              name="password"
+              placeholder="Password"
+              id="password-input"
+              onkeyup="validatePassword()"
+              required
+            />
+          </div>
+          <span class="error" id="password-error"></span>
+          <span class="error" id="password"></span>
+
+          <div class="signup__form-control">
+            <img src="images/icons/password.png" alt="icon" />
+            <input
+              class="signup_input"
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm password"
+              id="cPassword-input"
+              title="hello"
+              onkeyup="validateConfirmPassword()"
+              required
+            />
+          </div>
+          <span class="error" id="cPassword-error"></span>
+          <span class="error" id="password"></span>
+
+          <button class="signup__button" type="submit" id="submit">
+            Create Account
+          </button>
+          <span class="error" id="form-error"></span>
+        </form>
+      </div>
+    </section>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>

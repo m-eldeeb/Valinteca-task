@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Abdoullah Ashgar EL-kharef";
+  src: url("../../fonts/Abdoullah Ashgar EL-kharef Regular.ttf");
+}
+
+/* globals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background: rgba(245, 247, 255, 0.85);
+  --heading1: #2d2d2d;
+  --paragraph: #1f1249;
+  --linear-firstColor: #2663df;
+  --linear-secondColor: #758ff0;
+  --box-shadow: #9cadf2;
+  --input-border: #dbe3ff;
+  --input-placeholder: #3b3b3b;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* welcome page */
+
+.welcome {
+  width: 375px;
+  border-radius: 10px;
+  padding: 40px 0;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.welcome__img {
+  width: 315px;
+}
+.welcome__img img {
+  max-width: 100%;
+}
+.welcome__info {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  text-align: center;
+}
+.welcome__heading {
+  width: 315px;
+  font-family: "Abdoullah Ashgar EL-kharef";
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: var(--heading1);
+}
+.welcome__paragraph {
+  width: 315px;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--paragraph);
+}
+
+.welcome__button {
+  color: #fff;
+  border: none;
+  width: 315px;
+  height: 60px;
+  font-size: 16px;
+  font-family: "Mulish";
+  line-height: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(
+    113.87deg,
+    var(--linear-firstColor) 14.81%,
+    var(--linear-secondColor) 88.76%
+  );
+  box-shadow: 0px 6px 18px var(--box-shadow);
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+}
+
+/* media query*/
+
+@media (min-width: 1280px) {
+  .welcome {
+    width: 1080px;
+    padding: 60px 0;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .welcome__img {
+    width: 450px;
+  }
+
+  .welcome__info {
+    width: 450px;
+    gap: 40px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .welcome__heading {
+    font-size: 56px;
+    line-height: 67.2px;
+  }
+
+  .welcome__paragraph {
+    width: 450px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .welcome__button {
+    width: 450px;
+  }
+}
+
+/***********************************************/
+/*signup page*/
+.signup {
+  width: 375px;
+  border-radius: 10px;
+  padding: 40px 0;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.signup__img {
+  width: 315px;
+}
+
+.signup__img img {
+  max-width: 100%;
+}
+
+.signup__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  text-align: center;
+}
+
+.signup__heading {
+  width: 315px;
+  font-family: "Abdoullah Ashgar EL-kharef";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+  text-transform: capitalize;
+  color: var(--heading1);
+}
+
+.signup__paragraph {
+  width: 315px;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--paragraph);
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 315px;
+}
+.signup__form-control {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 12px;
+  background-color: #fff;
+  border: 1px solid var(--input-border);
+  border-radius: 10px;
+}
+.signup_input {
+  border: none;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--input-placeholder);
+  outline: none;
+  width: 100%;
+  padding: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.signup__button {
+  color: #fff;
+  border: none;
+  width: 315px;
+  height: 60px;
+  font-size: 16px;
+  font-family: "Mulish";
+  line-height: 22px;
+  font-weight: 700;
+  background: linear-gradient(
+    113.87deg,
+    var(--linear-firstColor) 14.81%,
+    var(--linear-secondColor) 88.76%
+  );
+  box-shadow: 0px 6px 18px var(--box-shadow);
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}
+
+.error {
+  background-color: #fff;
+  color: #1f1249;
+  text-transform: capitalize;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Mulish";
+  font-weight: 400;
+  padding: 10px;
+  display: none;
+  border: 1px dashed red;
+}
+
+@media (min-width: 1280px) {
+  .signup {
+    width: 1080px;
+    padding: 60px 0;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .signup__img {
+    width: 450px;
+    height: 536px;
+  }
+
+  .signup__info {
+    width: 450px;
+    gap: 40px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .signup__heading {
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+
+  .signup__paragraph {
+    width: 450px;
+    font-size: 24px;
+    line-height: 38.4px;
+  }
+  .signup__form {
+    width: 450px;
+  }
+  .signup__button {
+    width: 450px;
+  }
+}
+/******************************************************/
+/* succeed page*/
+.success {
+  width: 375px;
+  border-radius: 10px;
+  padding: 40px 0;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.success__img {
+  width: 315px;
+}
+
+.success__img img {
+  max-width: 100%;
+}
+
+.success__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  text-align: center;
+}
+
+.success__heading {
+  font-family: "Abdoullah Ashgar EL-kharef";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+  text-transform: capitalize;
+  color: var(--heading1);
+}
+
+.success__user {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--paragraph);
+}
+
+@media (min-width: 1280px) {
+  .success {
+    width: 1080px;
+    padding: 60px 0;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .success__img {
+    width: 450px;
+    height: 536px;
+  }
+
+  .success__info {
+    width: 450px;
+    gap: 40px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .success__heading {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .success__user {
+    width: 450px;
+    line-height: 25.6px;
+  }
+}
